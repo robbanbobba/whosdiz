@@ -1,0 +1,126 @@
+#myBody {
+    background-image: url(image/question-mark-background-.jpeg);
+    background-size: contain;
+    text-align: center;
+}
+
+#popup {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+#popupContent {
+    
+    background: radial-gradient(circle, rgb(97, 0, 188) 0%, transparent 70%);
+    background-color: rgb(0, 0, 73);
+    color: yellow;
+    margin-top: 20px;
+    padding: 10px;
+    border: solid;
+}
+#heading {
+    position: relative;
+    font-family: Rock Salt;
+    font-size: 50px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    color: yellow;
+    display: inline;
+    text-align: center;
+}
+#heading::before {
+    content: '';
+    background: radial-gradient(circle, rgb(97, 0, 188) 20%, transparent 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.questionmark {
+    width: 120px;
+    height: 120px;
+}
+#theGame {
+    color: yellow; 
+    /* background: radial-gradient(circle, rgb(97, 0, 188) 0%, transparent 100%); */
+    background-color: rgb(0, 0, 73);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid;
+} 
+#heading2 {
+    font-size: 25px;
+    background: radial-gradient(circle, rgb(97, 0, 188) 0%, transparent 100%);
+    background-color: rgb(0, 0, 73);
+    margin-bottom: 0px;
+    border-bottom: 1px;
+    border-color: yellow;
+}
+img {
+    width: 100%
+}
+/* #imgdiv{
+    width: 200px
+} */
+#score {
+    background: radial-gradient(circle, rgb(97, 0, 188) 0%, transparent 100%);
+    background-color: rgb(0, 0, 73);
+    color: yellow;
+    text-align: left;
+    margin-left: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+#showResult {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+#showResultContent {
+    display: flex;
+    background: radial-gradient(circle, rgb(97, 0, 188) 0%, transparent 100%);
+    background-color: rgb(0, 0, 73);
+    color: yellow;
+    max-height: 80%;
+    margin: auto;
+    margin-top: 10%;
+    padding: 10px;
+    align-items: center;
+    overflow-y: auto;
+    border: solid;
+    white-space: pre-wrap;
+}
+#button1,
+#button2,
+#button3,
+#button4 {
+    color: yellow; 
+    background-color: rgb(0, 0, 73); 
+    background: radial-gradient(circle, rgb(97, 0, 188) 0%, transparent 100%);
+}
+#gameTen,
+#gameTwenty,
+#gameAll {
+    color: yellow; 
+    background-color: rgb(0, 0, 73);
+}
+#playAgain {
+    color: yellow; 
+    background-color: rgb(0, 0, 73);
+}

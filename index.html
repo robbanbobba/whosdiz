@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body id="myBody">
+    <h1 id="heading" class="mt-1 mt-md-3 mt-lg-3">Who's diz??</h1>
+    <div class="row justify-content-center align-items-center">
+        <div class="col-lg-3 col-md-1 d-none d-lg-block d-md-block text-center">
+            <img class="img-fluid questionmark" src="image/questionmark.png" alt="questionmark">
+        </div>
+        <div class="col-10 col-sm-7 col-md-5 col-lg-4 col-xl-3">
+            <div id="theGame" class="card">
+                <h2 class="card-title" id="heading2">Vad heter personen på bilden?</h2>
+                <div id="imgdiv"><img src="images/students/robin_persson.jpg" alt="Klasskamrat"></div>
+                <button id="button1" class="btn btn-outline-primary spelknapp">Alternativ 1</button>
+                <button id="button2" class="btn btn-outline-primary spelknapp">Alternativ 2</button>
+                <button id="button3" class="btn btn-outline-primary spelknapp">Alternativ 3</button>
+                <button id="button4" class="btn btn-outline-primary spelknapp">Alternativ 4</button>
+                <p id="score">Dina resultat: </p>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-1 d-none d-lg-block d-md-block text-center">
+            <img class="img-fluid questionmark" src="image/questionmark.png" alt="questionmark">
+        </div>
+    </div>
+    <div id="popup">
+        <div class="col-10 col-sm-7 col-md-5 col-lg-4 col-xl-3">
+            <div id="popupContent" class="card">
+                <h2>Namnspelet</h2>
+                <p>I detta spel kommer du få se bilder på personer från klass FED-23 på Medieinstitutet i Malmö. Din uppgift är att gissa vad personen på bilden heter med hjälp av fyra svarsknappar. I slutet visas din poäng. Välj nedan hur många foton spelet ska visa</p>
+                <button id="gameTen" class="btn btn-outline-primary">10 bilder</button>
+                <button id="gameTwenty" class="btn btn-outline-primary">20 bilder</button>
+                <button id="gameAll" class="btn btn-outline-primary">Samtliga bilder</button>
+            </div>
+        </div>
+    </div>
+    <div id="showResult">
+        <div id="showResultContent" class="col-10 col-sm-7 col-md-5 col-lg-4 col-xl-3 card">
+            <h2>Snyggt jobbat!</h2>
+            <div></div>
+            <button id="playAgain" class="btn btn-outline-primary">Spela igen!</button>
+        </div>
+    </div>
+    <script src="students.js"></script>
+    <script src="app.js"></script>    
+</body>
+</html>
